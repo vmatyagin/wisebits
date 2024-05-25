@@ -1,0 +1,22 @@
+.button {
+    position: relative;
+    width: 36px;
+    height: 36px;
+    background-color: var(--ui--color-background-accent);
+    color: var(--ui--color-text-main-inverse);
+    border: none;
+    border-radius: 100%;
+    cursor: pointer;
+    transition: background-color 0.1s ease-in-out;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &:disabled {
+        background-color: var(--ui--color-background-accent--disabled);
+    }
+
+    &:hover {
+        background-color: var(--ui--color-background-accent--disabled);
+    }
+}

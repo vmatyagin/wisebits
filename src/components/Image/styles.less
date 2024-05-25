@@ -1,0 +1,46 @@
+.image-container {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    padding-top: 66.66%;
+    position: relative;
+    overflow: hidden;
+    background-color: var(--ui--color-background-placeholder);
+    color: var(--ui--color-text-main-inverse);
+
+    img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        width: 100%;
+
+        object-fit: cover;
+        object-position: center top;
+
+        &.failed {
+            display: none;
+        }
+    }
+
+    &__icon {
+        position: absolute;
+        top: 50%;
+        right: 50%;
+        transform: translate(50%, -50%);
+        z-index: 1;
+        border: none;
+        background: none;
+        color: inherit;
+
+        .restart {
+            transition: transform 0.1s ease-in-out;
+            cursor: pointer;
+
+            &:hover {
+                transform: scale(1.2);
+            }
+        }
+    }
+}
